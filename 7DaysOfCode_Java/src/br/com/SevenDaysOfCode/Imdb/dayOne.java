@@ -13,13 +13,13 @@ public class dayOne {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		HttpRequest request = HttpRequest.newBuilder()
-				//Requisição - Conteúdo
+				//Requisição- Conteúdo
 				.GET()
-				.uri(URI.create("https://imdb-api.com/en/API/SearchMovie/k_oy0vazi6/thepatriot2000"))
+				.uri(URI.create("https://imdb-api.com/en/API/SearchMovie/API_KEY/inception 2010"))
 				.timeout(Duration.ofSeconds(10))
 				.build();
 		HttpClient client = HttpClient.newBuilder()
-				// Execuçao - Como será executado
+				// Execução - Como será executado
 				.connectTimeout(Duration.ofSeconds(10))
 				.build();
 		
